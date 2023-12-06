@@ -65,20 +65,20 @@ nav
     font-size: 1.5rem;
 }
 
-a
+.nav__links a
 {
     color: black;
     display: inline-block;
     text-decoration: none;
 }
 
-a:hover
+.nav__links a:hover
 {
     font-weight: 500;
     color: rgb(152, 152, 152);
 }
 
-a::after
+.nav__links a::after
 {
     margin-top: 2px;
     content: '';
@@ -89,7 +89,7 @@ a::after
     transition: all 0.5s ease 0s;
 }
 
-a:hover::after
+.nav__links a:hover::after
 {
   width: 100%;
 }
@@ -192,4 +192,159 @@ a:hover::after
     transform: none;
 }
 
+.hamburger__icon span:first-child
+{
+    opacity: 1;
+}
+
+.hamburger__icon span:first-child
+{
+    transform: none;
+}
+
 /* End of Hamburger Menu */
+
+
+
+/* Section */
+
+section
+{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section__container
+{
+    display: flex;
+}
+
+/* End of Section */
+
+/* Profile Section */
+
+#profile
+{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic__container
+{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text
+{
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p
+{
+    font-weight: 600;
+}
+
+.section__text__p1
+{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section__text
+{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials__container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* End of Profile Section */
+
+
+/* Icons */
+
+.icon
+{
+    cursor: pointer;
+    background: transparent;
+    height: 2rem;
+}
+
+/* End of Icons */
+
+
+/* Buttons */
+
+.btn
+{
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn__container .btn__colour1 a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.btn__colour1, 
+.btn__colour2
+{
+    border: rgb(53,53,53) 1px solid;
+}
+
+.btn__colour1:hover, 
+.btn__colour2:hover
+{
+    cursor: pointer;
+}
+
+
+.btn__colour1, 
+.btn__colour2:hover
+{
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.btn__colour1:hover
+{
+    background: rgb(0,0,0);
+}
+
+.btn__colour2
+{
+    background: none;
+}
+
+.btn__colour2:hover
+{
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn__container
+{
+    gap: 1rem;
+}
+
+
+
+/* End of Buttons */
